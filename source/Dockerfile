@@ -3,6 +3,7 @@ FROM jenkins/jenkins:lts
 LABEL Version="0.0.0.0"
 LABEL Author="Maciej Rachuna"
 LABEL Application="Jenkins Master"
+LABEL BuildJobName="xxx"
 
 # install plugins
 COPY source/plugins.txt /usr/share/jenkins/ref/plugins.txt
