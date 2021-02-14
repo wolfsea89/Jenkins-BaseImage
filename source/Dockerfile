@@ -1,5 +1,9 @@
 FROM jenkins/jenkins:lts
 
+LABEL Version="0.0.0.0"
+LABEL Author="Maciej Rachuna"
+LABEL Application="Jenkins Master"
+
 # install plugins
 COPY source/plugins.txt /usr/share/jenkins/ref/plugins.txt
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
