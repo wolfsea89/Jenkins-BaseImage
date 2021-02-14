@@ -1,0 +1,8 @@
+{
+  "DOCKER_PROJECTS": [
+    {
+      "name": "jenkins_master",
+      "dockerfilePath": "source/Dockerfile"
+    }
+  ]
+}
