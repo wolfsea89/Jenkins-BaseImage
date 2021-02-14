@@ -6,9 +6,10 @@ LABEL Version='${jenkins_include_version}'
 LABEL JenkinsJob='${jenkins_include_jenkinsJob}'
 
 # install plugins
-COPY source/plugins.txt /usr/share/jenkins/ref/plugins.txt
+COPY source/plugins /usr/share/jenkins/ref/plugins.txt
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 
+# Add user
 USER root
 RUN echo "jenkins:x:$(id -g):" >> /etc/groups
 RUN echo "jenkins:x:30001:$(id -g):Jenkins:$JENKINS_HOME:/bin/false" >> /etc/passwd
@@ -23,4 +24,4 @@ ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 
 # Jenkins runs all grovy files from init.groovy.d dir
 # use this for creating default admin user
-COPY source/default-user.groovy /usr/share/jenkins/ref/init.groovy.d/
+COPY source/scripts/default-user.groovy /usr/share/jenkins/ref/init.groovy.d/
