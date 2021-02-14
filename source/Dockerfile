@@ -16,7 +16,7 @@ USER 30001
 
 # update the username and password
 ENV JENKINS_USER admin
-ENV JENKINS_PASS ThisIs@StrongP@ssword
+ENV JENKINS_PASS password
 
 # allows to skip Jenkins setup wizard
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
