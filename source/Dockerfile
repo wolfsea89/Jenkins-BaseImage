@@ -1,9 +1,9 @@
 FROM jenkins/jenkins:lts
 
-LABEL Version="0.0.0.0"
-LABEL Author="Maciej Rachuna"
-LABEL Application="Jenkins Master"
-LABEL BuildJobName="xxx"
+LABEL Author='Maciej Rachuna'
+LABEL Application='Jenkins Master'
+LABEL Version='${jenkins_include_version}'
+LABEL JenkinsJob='${jenkins_include_jenkinsJob}'
 
 # install plugins
 COPY source/plugins.txt /usr/share/jenkins/ref/plugins.txt
@@ -15,8 +15,8 @@ RUN echo "jenkins:x:30001:$(id -g):Jenkins:$JENKINS_HOME:/bin/false" >> /etc/pas
 USER 30001
 
 # update the username and password
-ENV JENKINS_USER admin
-ENV JENKINS_PASS password
+ENV JENKINS_USER='${jenkins_include_admin_username}'
+ENV JENKINS_PASS='${jenkins_include_admin_password}'
 
 # allows to skip Jenkins setup wizard
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
