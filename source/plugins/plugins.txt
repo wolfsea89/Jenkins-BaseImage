@@ -5,7 +5,6 @@ timestamper
 blueocean-pipeline-scm-api
 display-url-api
 token-macro
-ant
 echarts-api
 okhttp-api
 branch-api
@@ -111,3 +110,7 @@ cloudbees-bitbucket-branch-source
 scm-api
 docker-commons
 authorize-project
+envinject
+job-dsl
+seed
+disk-usage
