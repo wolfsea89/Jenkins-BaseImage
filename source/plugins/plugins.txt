@@ -8,3 +8,4 @@ blueocean
 disk-usage
 seed
 pipeline-utility-steps
+ldap
