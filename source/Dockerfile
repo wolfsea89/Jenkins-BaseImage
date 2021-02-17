@@ -6,7 +6,7 @@ LABEL Version='${jenkins_include_version}'
 LABEL JenkinsJob='${jenkins_include_jenkinsJob}'
 
 # install plugins
-COPY source/plugins /usr/share/jenkins/ref/plugins.txt
+COPY source/plugins/plugins.txt /usr/share/jenkins/ref/plugins.txt
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 
 # Add user

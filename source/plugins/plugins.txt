@@ -80,6 +80,7 @@ command-launcher
 ssh-slaves
 blueocean-core-js
 cloudbees-folder
+envinject
 email-ext
 structs
 blueocean-pipeline-api-impl
@@ -101,6 +102,7 @@ checks-api
 pipeline-stage-tags-metadata
 font-awesome-api
 jenkins-design-language
+envinject-api
 pipeline-rest-api
 workflow-api
 pam-auth
@@ -108,5 +110,4 @@ antisamy-markup-formatter
 cloudbees-bitbucket-branch-source
 scm-api
 docker-commons
-envinject-api
-envinject
+authorize-project
