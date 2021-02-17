@@ -3,7 +3,6 @@ gradle
 momentjs
 matrix-auth
 pipeline-stage-view
-pipeline-utility-steps
 pipeline-github-lib
 ldap
 workflow-aggregator
