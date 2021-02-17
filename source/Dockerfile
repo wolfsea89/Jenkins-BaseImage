@@ -14,7 +14,7 @@ USER 30001
 # install plugins
 COPY source/plugins/plugins.txt /usr/share/jenkins/ref/plugins.txt
 # RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
-RUN jenkins-plugin-cli --war "/usr/share/jenkins/jenkins.war" --plugin-file "/var/jenkins_home/plugins.txt" --verbose
+RUN jenkins-plugin-cli --war "/usr/share/jenkins/jenkins.war" --plugin-file "/usr/share/jenkins/ref/plugins.txt" --verbose
 
 # update the username and password
 ENV JENKINS_USER='${jenkins_include_admin_username}'
