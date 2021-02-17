@@ -1,1 +1,9 @@
+bouncycastle-api
+command-launcher
+jdk-tool
+ssh-slaves
+envinject
 blueocean
+disk-usage
+envinject
+seed
