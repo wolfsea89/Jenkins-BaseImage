@@ -5,7 +5,6 @@ pipeline-stage-view
 pipeline-utility-steps
 pipeline-github-lib
 ldap
-configuration-as-code
 workflow-aggregator
 ws-cleanup
 lockable-resources
