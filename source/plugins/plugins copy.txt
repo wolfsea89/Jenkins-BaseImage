@@ -10,7 +10,7 @@ okhttp-api
 branch-api
 ssh-credentials
 git-client
-blueocean
+
 jdk-tool
 pubsub-light
 workflow-scm-step
