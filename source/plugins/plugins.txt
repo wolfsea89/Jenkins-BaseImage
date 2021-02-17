@@ -5,5 +5,4 @@ ssh-slaves
 envinject
 blueocean
 disk-usage
-envinject
 seed
