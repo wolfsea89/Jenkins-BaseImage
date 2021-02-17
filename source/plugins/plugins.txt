@@ -1,3 +1,4 @@
+configuration-as-code
 bouncycastle-api
 command-launcher
 jdk-tool

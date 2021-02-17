@@ -1,6 +1,7 @@
-
+timestamper
 gradle
 momentjs
+matrix-auth
 pipeline-stage-view
 pipeline-utility-steps
 pipeline-github-lib
@@ -10,9 +11,12 @@ ws-cleanup
 lockable-resources
 resource-disposer
 handlebars
+ssh-slaves
 email-ext
 build-timeout
+envinject-api
 pipeline-rest-api
 pam-auth
 antisamy-markup-formatter
 authorize-project
+job-dsl
