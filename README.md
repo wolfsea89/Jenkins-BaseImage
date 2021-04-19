@@ -1,4 +1,4 @@
-# Jenkins-BaseImage
+# Jenkins-Docker-BaseImage
 
 Direstory source
 ```
@@ -7,3 +7,6 @@ Direstory source
 └── source           # Application source code
 
 ```
+
+Jenkins user:     jenkins
+Jenkins user uid: 30001
